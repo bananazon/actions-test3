@@ -55,7 +55,6 @@ jobs:
   deploy-production:
     needs: test-staging
     environment: Production
-    needs: deploy-staging
     runs-on: ubuntu-latest
     steps:
       - run: |
